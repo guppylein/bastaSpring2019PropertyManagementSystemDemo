@@ -1,0 +1,11 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "AzureWebJobsDashboard": "UseDevelopmentStorage=true",
+    "ConnectionStrings:pmsData": "Server=tcp:guppyware.database.windows.net,1433;Initial Catalog=PmsDemo;Persist Security Info=False;User ID=guppy;Password=basta2019!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  },
+  "ConnectionStrings": {
+    "pmsData": "Server=tcp:guppyware.database.windows.net,1433;Initial Catalog=PmsDemo;Persist Security Info=False;User ID=guppy;Password=basta2019!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  }
+}
