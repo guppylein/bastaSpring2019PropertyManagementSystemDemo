@@ -2,10 +2,8 @@
 {
     public enum RoomState
     {
-        Unknown = 0,
-        Available = 1,
-        Reservated = 2,
-        OutOfOrder = 3,
-        OutOfService = 4
+        Available = 0,
+        OutOfOrder = 1,
+        OutOfService = 2
     }
 }
