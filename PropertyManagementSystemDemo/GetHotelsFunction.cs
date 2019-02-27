@@ -26,8 +26,9 @@ namespace Basta.PropertyManagementSystemDemo
 
         private static IEnumerable<Hotel> GetHotels()
         {
-            var connectionString = ConfigurationManager
-                .ConnectionStrings["pmsData"].ConnectionString;
+            //var connectionString = ConfigurationManager
+            //    .ConnectionStrings["pmsData"].ConnectionString;
+            var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings:pmsData");
 
             using (var sqlConnection = new SqlConnection(connectionString))
             {

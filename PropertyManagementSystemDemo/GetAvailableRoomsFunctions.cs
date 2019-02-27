@@ -31,8 +31,9 @@ namespace Basta.PropertyManagementSystemDemo
 
         private static IEnumerable<RoomViewModel> GetAvailableRooms(DateTime from, DateTime to, int capacity)
         {
-            var connectionString = ConfigurationManager
-                .ConnectionStrings["pmsData"].ConnectionString;
+            //var connectionString = ConfigurationManager
+            //    .ConnectionStrings["pmsData"].ConnectionString;
+            var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings:pmsData");
 
             using (var sqlConnection = new SqlConnection(connectionString))
             {
