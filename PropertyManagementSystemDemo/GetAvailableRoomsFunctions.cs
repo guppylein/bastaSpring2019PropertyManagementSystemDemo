@@ -46,7 +46,7 @@ FROM Hotels h
   INNER JOIN RoomTypes rt ON r.RoomtypeId = rt.Id
   LEFT OUTER JOIN Reservations rv ON rv.RoomId = r.Id
 WHERE r.State = 0 
-  AND rv.DateFrom >= @from AND rv.DateTo <= @to
+  AND (rv.DateFrom IS NULL OR (rv.DateFrom >= @from AND rv.DateTo <= @to))
   AND rt.Capacity = @capacity";
                 cmd.Parameters.AddWithValue("from", from);
                 cmd.Parameters.AddWithValue("to", to);
