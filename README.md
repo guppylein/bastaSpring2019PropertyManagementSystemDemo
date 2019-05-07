@@ -1,4 +1,4 @@
-# bastaSprint2019PropertyManagementSystemDemo
+# bastaSpring2019PropertyManagementSystemDemo
 
 First steps with azure functions on basta2019 in Frankfurt.
 
